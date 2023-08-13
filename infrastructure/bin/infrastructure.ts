@@ -6,7 +6,7 @@ import { LambdaStack } from '../lib/lambda-stack';
 
 const app = new cdk.App();
 new S3Stack(app, 's3Stack', {
-
+    terminationProtection: true
 });
 
 new LambdaStack(app, 'lambdaStack', {
